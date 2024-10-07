@@ -107,5 +107,9 @@
       tags:
       - Document
     storage:
+<<<<<<< HEAD
       SheetPrinter: 0
   - type: DocumentPrinter #DocumentPrinterComponent (ADT)
+=======
+      Paper: 0
+>>>>>>> 3fafe230f07f62b6118213808a149ff188246809

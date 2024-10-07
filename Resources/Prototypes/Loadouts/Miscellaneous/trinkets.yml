@@ -84,9 +84,23 @@
 #     back:
 #     - ClothingNeckLGBTPin
 
+<<<<<<< HEAD
 # - type: loadout
 #   id: ClothingNeckAromanticPin
 #   equipment: ClothingNeckAromanticPin
+=======
+- type: loadout
+  id: ClothingNeckGayPin
+  storage:
+    back:
+    - ClothingNeckGayPin
+
+- type: loadout
+  id: ClothingNeckIntersexPin
+  storage:
+    back:
+    - ClothingNeckIntersexPin
+>>>>>>> 3fafe230f07f62b6118213808a149ff188246809
 
 # - type: startingGear
 #   id: ClothingNeckAromanticPin

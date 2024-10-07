@@ -49,13 +49,6 @@ public sealed partial class VoiceMaskNameChangeWindow : FancyWindow
             ReloadVoices(IoCManager.Resolve<IPrototypeManager>());
         }
         // Corvax-TTS-End
-        // ADT Barks start
-        if (IoCManager.Resolve<IConfigurationManager>().GetCVar(ADTCCVars.BarksEnabled))
-        {
-            BarksContainer.Visible = true;
-            ReloadBarks(IoCManager.Resolve<IPrototypeManager>());
-        }
-        // ADT Barks end
 
         AddVerbs();
     }
@@ -69,7 +62,7 @@ public sealed partial class VoiceMaskNameChangeWindow : FancyWindow
         _verbs.Sort((a, b) => a.Item1.CompareTo(b.Item1));
     }
 
-    private void AddVerbs()
+    public void AddVerbs()
     {
         SpeechVerbSelector.Clear();
 

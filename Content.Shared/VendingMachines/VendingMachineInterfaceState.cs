@@ -2,6 +2,7 @@ using Robust.Shared.Serialization;
 
 namespace Content.Shared.VendingMachines
 {
+<<<<<<< HEAD
     [NetSerializable, Serializable]
     public sealed class VendingMachineInterfaceState : BoundUserInterfaceState
     {
@@ -26,6 +27,8 @@ namespace Content.Shared.VendingMachines
     }
     //ADT-Economy-End
 
+=======
+>>>>>>> 3fafe230f07f62b6118213808a149ff188246809
     [Serializable, NetSerializable]
     public sealed class VendingMachineEjectMessage : BoundUserInterfaceMessage
     {

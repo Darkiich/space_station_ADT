@@ -142,6 +142,7 @@
       # Pins
       - !type:GroupSelector
         children:
+<<<<<<< HEAD
         # start adt tweak
         # - id: ClothingNeckLGBTPin
         # - id: ClothingNeckAromanticPin
@@ -155,6 +156,20 @@
         # - id: ClothingNeckAutismPin
         # - id: ClothingNeckGoldAutismPin
         # end adt tweak
+=======
+        - id: ClothingNeckLGBTPin
+        - id: ClothingNeckAromanticPin
+        - id: ClothingNeckAsexualPin
+        - id: ClothingNeckBisexualPin
+        - id: ClothingNeckGayPin
+        - id: ClothingNeckIntersexPin
+        - id: ClothingNeckLesbianPin
+        - id: ClothingNeckNonBinaryPin
+        - id: ClothingNeckPansexualPin
+        - id: ClothingNeckTransPin
+        - id: ClothingNeckAutismPin
+        - id: ClothingNeckGoldAutismPin
+>>>>>>> 3fafe230f07f62b6118213808a149ff188246809
         # Corvax-Pins-Start
         - id: ClothingNeckUSSPPin
         - id: ClothingNeckDonkPin

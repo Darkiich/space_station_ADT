@@ -15,6 +15,7 @@
   - CigPackBlack
   - CigarCase
   - CigarGold
+<<<<<<< HEAD
   #ADT start
   # - ClothingNeckLGBTPin
   # - ClothingNeckAromanticPin
@@ -28,6 +29,20 @@
   # - ClothingNeckAutismPin
   # - ClothingNeckGoldAutismPin
   #ADT end
+=======
+  - ClothingNeckLGBTPin
+  - ClothingNeckAromanticPin
+  - ClothingNeckAsexualPin
+  - ClothingNeckBisexualPin
+  - ClothingNeckGayPin
+  - ClothingNeckIntersexPin
+  - ClothingNeckLesbianPin
+  - ClothingNeckNonBinaryPin
+  - ClothingNeckPansexualPin
+  - ClothingNeckTransPin
+  - ClothingNeckAutismPin
+  - ClothingNeckGoldAutismPin
+>>>>>>> 3fafe230f07f62b6118213808a149ff188246809
    # Corvax-Loadouts-Start
   - ClothingNeckAtharaPin
   - ClothingNeckCorvaxPin
@@ -1132,7 +1147,11 @@
   loadouts:
   - DetectiveArmorVest
   - DetectiveCoat
+<<<<<<< HEAD
   - DetectiveCoatInvestigator # ADT-Loadout
+=======
+  - DetectiveCoatGrey
+>>>>>>> 3fafe230f07f62b6118213808a149ff188246809
 
 - type: loadoutGroup
   id: SecurityCadetJumpsuit

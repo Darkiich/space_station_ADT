@@ -16,8 +16,12 @@ using Content.Shared.Slippery;
 using Content.Shared.Strip.Components;
 using Content.Shared.Temperature;
 using Content.Shared.Verbs;
+<<<<<<< HEAD
 using Content.Shared.ADT.Phantom.Components;
 using Content.Shared.Damage.Systems;
+=======
+using Content.Shared.Chat;
+>>>>>>> 3fafe230f07f62b6118213808a149ff188246809
 
 namespace Content.Shared.Inventory;
 
@@ -34,9 +38,13 @@ public partial class InventorySystem
         SubscribeLocalEvent<InventoryComponent, ModifyChangedTemperatureEvent>(RelayInventoryEvent);
         SubscribeLocalEvent<InventoryComponent, GetDefaultRadioChannelEvent>(RelayInventoryEvent);
         SubscribeLocalEvent<InventoryComponent, RefreshNameModifiersEvent>(RelayInventoryEvent);
+<<<<<<< HEAD
         SubscribeLocalEvent<InventoryComponent, CheckMagicItemEvent>(RelayInventoryEvent); // goob edit
         SubscribeLocalEvent<InventoryComponent, StaminaDamageModifyEvent>(RelayInventoryEvent); // ADT Stunmeta fix
         SubscribeLocalEvent<InventoryComponent, InjectAttemptEvent>(RelayInventoryEvent); // ADT Injector blocking
+=======
+        SubscribeLocalEvent<InventoryComponent, TransformSpeakerNameEvent>(RelayInventoryEvent);
+>>>>>>> 3fafe230f07f62b6118213808a149ff188246809
 
         // by-ref events
         SubscribeLocalEvent<InventoryComponent, GetExplosionResistanceEvent>(RefRelayInventoryEvent);

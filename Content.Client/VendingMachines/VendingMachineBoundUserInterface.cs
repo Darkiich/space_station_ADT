@@ -23,6 +23,7 @@ namespace Content.Client.VendingMachines
         {
             base.Open();
 
+<<<<<<< HEAD
             var vendingMachineSys = EntMan.System<VendingMachineSystem>();
 
             var component = EntMan.GetComponent<VendingMachineComponent>(Owner); //ADT-Economy
@@ -38,16 +39,19 @@ namespace Content.Client.VendingMachines
             _menu.Populate(Owner, _cachedInventory, component.PriceMultiplier, component.Credits); //ADT-Economy-Tweak
 
             _menu.OpenCenteredLeft();
+=======
+            _menu = this.CreateWindow<VendingMachineMenu>();
+            _menu.OpenCenteredLeft();
+            _menu.Title = EntMan.GetComponent<MetaDataComponent>(Owner).EntityName;
+            _menu.OnItemSelected += OnItemSelected;
+            Refresh();
+>>>>>>> 3fafe230f07f62b6118213808a149ff188246809
         }
 
-        protected override void UpdateState(BoundUserInterfaceState state)
+        public void Refresh()
         {
-            base.UpdateState(state);
-
-            if (state is not VendingMachineInterfaceState newState)
-                return;
-
-            _cachedInventory = newState.Inventory;
+            var system = EntMan.System<VendingMachineSystem>();
+            _cachedInventory = system.GetAllInventory(Owner);
 
             _menu?.Populate(Owner, _cachedInventory, newState.PriceMultiplier, newState.Credits); //ADT-Economy-Tweak
         }
